@@ -1,0 +1,6 @@
+{
+  "custom": {
+    "fromJson": "javascript",
+    "override": "from json"
+  }
+}
