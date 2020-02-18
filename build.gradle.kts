@@ -10,25 +10,30 @@ plugins {
     kotlin("jvm") version Versions.kotlin
     kotlin("plugin.serialization") version Versions.kotlin
     id("com.github.ben-manes.versions") version Versions.Plugins.versions
+    id("com.github.johnrengelman.shadow") version Versions.Plugins.shadow
+    application
 }
 
 dependencies {
     // KOTLIN
     implementation(kotlin("stdlib-jdk8"))
     implementation(kotlin("reflect"))
-    
+
     // KTOR
     fun ktor(suffix: String) = "io.ktor:ktor-$suffix:${Versions.ktor}"
     implementation(ktor("server-netty")) // or: "server-jetty", "server-tomcat"
     implementation(ktor("jackson")) // or: "serialization", "gson"
     implementation(ktor("auth"))
+    implementation(ktor("auth-jwt"))
     implementation(ktor("html-builder"))
-    
+    implementation(ktor("metrics"))
+    implementation(ktor("metrics-micrometer"))
+
     // KTOR CLIENT
     implementation(ktor("client-core"))
     implementation(ktor("client-apache")) // or: "client-cio", "ktor-client-okhttp", ...
     implementation(ktor("client-jackson")) // or: "client-gson"
-    
+
     // KODEIN
     implementation("org.kodein.di:kodein-di-framework-ktor-server-jvm:${Versions.kodein}")
     implementation("org.kodein.di:kodein-di-generic-jvm:${Versions.kodein}")
@@ -49,11 +54,26 @@ dependencies {
     testImplementation("com.fasterxml.jackson.module:jackson-module-kotlin:${Versions.jackson}")
 }
 
+application {
+    //    mainClassName = "ktorsamples._11_fatjarKt"
+    mainClassName = "ktorsamples._51_auto_reloadKt"
+}
+
 tasks {
     withType<KotlinCompile> {
         kotlinOptions {
             jvmTarget = "1.8"
             freeCompilerArgs = listOf("-Xjsr305=strict", "-Xuse-experimental=io.ktor.util.KtorExperimentalAPI")
+        }
+    }
+
+    withType<Jar> {
+        manifest {
+            attributes(
+                mapOf(
+                    "Main-Class" to application.mainClassName
+                )
+            )
         }
     }
 

@@ -19,6 +19,7 @@ for server as well client side. For example [it does](https://ktor.io/clients/) 
 what Slf4j does to the different logging implementations - and that across platforms!
 
 See also: https://github.com/ktorio/ktor-samples
+See also: https://ktor.io/samples/index.html
 
 ## Terminology
 
@@ -49,30 +50,27 @@ See also: https://github.com/ktorio/ktor-samples
 * Config files (HOCON & ENV)
 * Ktor HTTP Client (Apache)
 * Authentication Basic
+* Authentication JWT
 * Test Engine
 * ShutDown URL
 * Static content
 * ktor html builder
+* Self containing FatJar
+* Metrics (micrometer, dropwizard)
+* Compression
+* Auto Reload
+* Enable CORS
+* Session
+* Custom Feature
 
 ## Do
 
-### Must
-
-* Metrics (micrometer, dropwizard)
-* Compression
 * Templates: freemarker/velocity/mustache/thymeleaf
-* Custom Feature
-
-### Maybe
-
 * ConditionalHeaders (optional response with ETags)
 * CachingHeaders
-* Enable CORS
 * Locations (typed routes, experimental)
 * SSL: https://ktor.io/servers/configuration.html
-* Authentication JWT
 * Authentication OAuth
-* Session
 * WebSockets
 * Raw sockets
 
