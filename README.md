@@ -66,8 +66,10 @@ See also: https://ktor.io/samples/index.html
 
 ## Do
 
+* Downloadable file
+* Caching Headers (etags)
 * ConditionalHeaders (optional response with ETags)
-* CachingHeaders
+* Content negotiation (offer JSON / XML / CSV / HTML / plain text)
 * Locations (typed routes, experimental)
 * SSL: https://ktor.io/servers/configuration.html
 * Authentication OAuth
