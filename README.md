@@ -56,6 +56,10 @@ See also: https://github.com/ktorio/ktor-samples
 
 ## Do
 
+* downloadable file
+* caching (etags)
+* content negotiation (offer JSON / XML / CSV / HTML / plain text)
+
 ### Must
 
 * Metrics (micrometer, dropwizard)
