@@ -28,6 +28,11 @@ dependencies {
     implementation(ktor("html-builder"))
     implementation(ktor("metrics"))
     implementation(ktor("metrics-micrometer"))
+    implementation(ktor("freemarker"))
+    implementation(ktor("mustache"))
+    implementation(ktor("pebble"))
+    implementation(ktor("thymeleaf"))
+    implementation(ktor("velocity"))
 
     // KTOR CLIENT
     implementation(ktor("client-core"))

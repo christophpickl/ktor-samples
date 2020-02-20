@@ -62,10 +62,10 @@ See also: https://ktor.io/samples/index.html
 * Enable CORS
 * Session
 * Custom Feature
+* Templates: freemarker/velocity/mustache/thymeleaf
 
 ## Do
 
-* Templates: freemarker/velocity/mustache/thymeleaf
 * ConditionalHeaders (optional response with ETags)
 * CachingHeaders
 * Locations (typed routes, experimental)

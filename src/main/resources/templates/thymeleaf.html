@@ -1,0 +1,6 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<h2 th:text="'Hello ' + ${user.name} + '!'"></h2>
+<ul>
+    <li th:each="record : ${records}" th:text="${record.item}"></li>
+</ul>
+</html>

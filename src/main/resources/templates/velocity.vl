@@ -1,0 +1,8 @@
+<html>
+<h2>Hello $user.name!</h2>
+<ul>
+#foreach( $record in $records )
+<li>$record.item</li>
+#end
+</ul>
+</html>
