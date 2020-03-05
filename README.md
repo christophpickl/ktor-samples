@@ -63,6 +63,7 @@ See also: https://ktor.io/samples/index.html
 * Session
 * Custom Feature
 * Templates: freemarker/velocity/mustache/thymeleaf
+* Upload File
 
 ## Do
 
