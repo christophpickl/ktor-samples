@@ -64,6 +64,7 @@ See also: https://ktor.io/samples/index.html
 * Custom Feature
 * Templates: freemarker/velocity/mustache/thymeleaf
 * Upload File
+* Raw sockets
 
 ## Do
 
@@ -75,7 +76,6 @@ See also: https://ktor.io/samples/index.html
 * SSL: https://ktor.io/servers/configuration.html
 * Authentication OAuth
 * WebSockets
-* Raw sockets
 
 ## Wont
 

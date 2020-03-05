@@ -33,6 +33,7 @@ dependencies {
     implementation(ktor("pebble"))
     implementation(ktor("thymeleaf"))
     implementation(ktor("velocity"))
+    implementation(ktor("network"))
 
     // KTOR CLIENT
     implementation(ktor("client-core"))
