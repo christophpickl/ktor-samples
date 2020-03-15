@@ -65,12 +65,12 @@ See also: https://ktor.io/samples/index.html
 * Templates: freemarker/velocity/mustache/thymeleaf
 * Upload File
 * Raw sockets
+* Caching Headers
 
 ## Do
 
-* Downloadable file
-* Caching Headers (etags)
 * ConditionalHeaders (optional response with ETags)
+* Downloadable file
 * Content negotiation (offer JSON / XML / CSV / HTML / plain text)
 * Locations (typed routes, experimental)
 * SSL: https://ktor.io/servers/configuration.html
