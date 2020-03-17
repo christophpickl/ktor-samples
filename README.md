@@ -66,12 +66,12 @@ See also: https://ktor.io/samples/index.html
 * Upload File
 * Raw sockets
 * Caching Headers
+* Content negotiation (offer JSON / XML / ...)
 
 ## Do
 
 * ConditionalHeaders (optional response with ETags)
 * Downloadable file
-* Content negotiation (offer JSON / XML / CSV / HTML / plain text)
 * Locations (typed routes, experimental)
 * SSL: https://ktor.io/servers/configuration.html
 * Authentication OAuth
